@@ -1,0 +1,100 @@
+.security-watch {
+    width:100%;
+    overflow: hidden;
+}
+
+.search-form {
+    margin: 60px;
+    padding: 0 20px;
+}
+
+.search-form #search {
+    width: 80%;
+    height: 2rem;
+    font-size: 1.2rem;
+}
+
+.search-form button{
+    height: 2rem;
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+.search-results {
+   width: 80%;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.security-name {
+
+}
+
+.security-ticker {
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.security-price {
+
+}
+
+
+* { box-sizing: border-box; }
+
+@keyframes ticker {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.ticker-wrap {
+    overflow: hidden;
+    display: flex;
+    height: 4rem;
+
+    background: linear-gradient(to top, #000000, #000000, #333333, #333333);
+    background-size: cover;
+    background-size: 100% 1px;
+    filter: blur(.6px);
+
+
+    .ticker {
+
+        display: flex;
+        flex: 0 0 auto;
+        gap: 1rem;
+        align-items: center;
+        height: 4rem;
+        line-height: 4rem;
+        white-space: nowrap;
+        margin-right: 1rem;
+        min-width: 100%;
+
+        animation-name: ticker;
+        animation-duration: 30s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-direction: normal;
+
+        .ticker__item {
+
+            display: inline-block;
+            min-width: 8rem;
+            padding: 0 2rem;
+            font-size: 2rem;
+            color: #33FF33;
+            text-shadow: 0 0 3px #33ff33;
+            font-family: "Courier New", monospace;
+
+        }
+
+    }
+
+}
